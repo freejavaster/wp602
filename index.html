@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="Keywords" content="open source php mysql magento">
+<meta name="Description" content="open source php mysql magento">
+<title>Home open source</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	height: 60px;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-color: #ADB96E;
+	position: absolute;
+	margin-top: 40px;
+	width: 960px;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	position: relative;
+	margin: 0px;
+	padding-top: 10px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.nav_bkcolor {
+	height: 40px;
+	width: 960px;
+	background-color: #EEE;
+	position: fixed;
+	clip: rect(auto,auto,auto,auto);
+	margin-top: 0px;
+	z-index: 9999;
+}
+.smail_pic {
+	border: 1px solid #000;
+}
+.disp_none {
+	visibility: hidden;
+	display: none;
+}
+.buttons {
+	margin: 10px;
+}
+-->
+</style>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryTooltip.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css">
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryTooltip.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+</head>
+
+<body onLoad="MM_preloadImages('img/php-elephant_b.png','img/mysql-logo.jpg','img/magento.png')">
+
+<div class="container">
+  <div class="nav_bkcolor" id="nav_backcolor">
+    <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="#">Home</a>      </li>
+        <li><a href="#php_page_top">PHP</a></li>
+        <li><a href="#mysql_page_top">Mysql</a>        </li>
+        <li><a href="#magento_page_top">Magento</a></li>
+      <li><a href="#contact_page_top">Contact us</a></li>
+</ul>
+<img src="img/logo3.jpg" width="208" height="40"></div> 
+  <div class="disp_none">
+    <a href="#" title="Home open source"><img src="img/logo.gif" alt="Insert Logo Here" name="Insert_logo" width="180" height="90" id="Insert_logo" style="background-color: #C6D580; display:block;" border="0" /></a>
+  <!-- end .header --></div>
+  <div class="content" id="home_page">
+    <h1>&nbsp;</h1>
+    <table width="864" border="0" align="center">
+      <tr align="left">
+        <th colspan="3" align="center" scope="col"><img src="img/php-elephant_b.png" name="php_b" width="576" height="402" id="php_b"></th>
+      </tr>
+      <tr>
+        <td width="22%"><a href="javascript:;" onClick="MM_swapImage('php_b','','img/php-elephant_b.png',1)"><img src="img/php-elephant_s.png" name="php_s" width="287" height="200" class="smail_pic" id="php_s" border="0"></a></td>
+        <td width="24%"><a href="javascript:;" onClick="MM_swapImage('php_b','','img/mysql-logo.jpg',1)"><img src="img/mysql_s.jpg" name="mysql_s" width="287" height="200" class="smail_pic" id="mysql_s" border="0"></a></td>
+        <td width="54%"><a href="javascript:;" onClick="MM_swapImage('php_b','','img/magento.png',1)"><img src="img/magento_s.gif" alt="magento" name="magento_smaill_pic" width="287" height="200" class="smail_pic" id="magento_smaill_pic" border="0"></a></td>
+      </tr>
+    </table>
+    <p><a name="php_page_top" id="php_page_top"></a></p>
+    <p>&nbsp;</p>
+    <!-- end .content -->
+  </div>
+  <div class="content" id="php_page">
+    <h1>PHP</h1>
+    <p>PHP is a server-side scripting language created in 1995 and designed for web development but also used as a general-purpose programming language. As of January 2013, PHP was installed on more than 240 million websites (39% of those sampled) and 2.1 million web servers. Originally created by Rasmus Lerdorf in 1994, the reference implementation of PHP (powered by the Zend Engine) is now produced by The PHP Group. While PHP originally stood for Personal Home Page,[4] it now stands for PHP: Hypertext Preprocessor, which is a recursive backronym.</p>
+    <div id="TabbedPanels1" class="TabbedPanels">
+      <ul class="TabbedPanelsTabGroup">
+        <li class="TabbedPanelsTab" tabindex="0">History</li>
+        <li class="TabbedPanelsTab" tabindex="0">PHP6</li>
+      </ul>
+      <div class="TabbedPanelsContentGroup">
+        <div class="TabbedPanelsContent">
+          <h2>&nbsp;</h2>
+          <h2><span>History</span>          </h2>
+          <p>PHP development began in 1994 when Rasmus Lerdorf wrote a series of Common Gateway Interface (CGI) binaries in C, which he used to maintain his personal homepage. He extended them to add the ability to work with web forms and to communicate with databases, and called this implementation &quot;Personal Home Page/Forms Interpreter&quot; or PHP/FI.</p>
+          <p>&nbsp;</p>
+        </div>
+        <div class="TabbedPanelsContent">
+          <p>&nbsp;</p>
+          <h2>PHP6</h2>
+          <p>PHP received mixed reviews due to lacking native <a href="https://en.wikipedia.org/wiki/Unicode" title="Unicode">Unicode</a> support at the core language level.<a href="https://en.wikipedia.org/wiki/PHP#cite_note-31">[31]</a><a href="https://en.wikipedia.org/wiki/PHP#cite_note-32">[32]</a> In 2005, a project headed by Andrei Zmievski was initiated to bring native Unicode support throughout PHP, by embedding the <a href="https://en.wikipedia.org/wiki/International_Components_for_Unicode" title="International Components for Unicode">International Components for Unicode</a> (ICU) library, and representing text strings as <a href="https://en.wikipedia.org/wiki/UTF-16" title="UTF-16">UTF-16</a> internally.<a href="https://en.wikipedia.org/wiki/PHP#cite_note-33">[33]</a>Since this would cause major changes both to the internals of the language and to user code, it was planned to release this as version 6.0 of the language, along with other major features then in development</p>
+      </div></div>
+    </div>
+    <p><a name="mysql_page_top" id="mysql_page_top"></a></p>
+    <p>&nbsp;</p>
+  </div>
+  <div class="content" id="mysql_page">
+    <h1>Mysql</h1>
+    <p>MySQL is a popular choice of database for use in web applications, and is a central component of the widely used LAMP open source web application software stack (and other 'AMP' stacks). LAMP is an acronym for &quot;Linux, Apache, MySQL, Perl/PHP/Python.&quot; Free-software-open source projects that require a full-featured database management system often use MySQL. Applications that use the MySQL database include: TYPO3, MODx, Joomla, WordPress, phpBB, MyBB, Drupal and other software. MySQL is also used in many high-profile, large-scale websites, including Google (though not for searches), Facebook, Twitter, Flickr, and YouTube.</p>
+    <h2>ScreenShot</h2>
+    <table width="100%" border="0">
+      <tr>
+        <th width="39%" scope="col"><img src="img/The_MySQL_Workbench_startup_screen.png" alt="Workbench_startup_screen" width="300" id="sprytrigger1"></th>
+        <th width="19%" scope="col">&nbsp;</th>
+        <th width="42%" scope="col"><img src="img/Mysql-screenshot.png" alt="mysql cmd" width="300" id="sprytrigger2"></th>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <h3><span id="Versions">Versions</span></h3>
+    <p>The following chart provides an overview of various MySQL versions and their current development statuses:</p>
+    <p><img src="img/mysql_v.png" width="700" height="750" alt="mysql versions"></p>
+    <p><a id="magento_page_top"></a></p>
+    <p>&nbsp;</p>
+  </div>
+  <div class="content" id="magento_page">
+    <h1>Magento</h1>
+    <p>Magento is an open-source content management system for e-commerce web sites. The software was originally developed by Varien Inc., a US private company headquartered in Culver City, California, with assistance from volunteers.</p>
+    <h2><span id="History">History</span></h2>
+    <p>Magento officially started development in early 2007. Seven months later, on August 31, 2007, the first public beta version was released.</p>
+    <p>Varien, the company owning Magento, formerly worked with osCommerce. It had originally planned to fork osCommerce but later decided to rewrite it as Magento.</p>
+    <p>In February 2011, eBay announced it had made an investment in Magento in 2010, worth a 49% ownership share of the company.</p>
+    <p>As of June 6, 2011 eBay owns 100% of Magento. eBay announced that Magento would join eBay's new X.Commerce initiative. Magento's CEO and co-founder Roy Rubin wrote on the Magento blog that &quot;Magento will continue to operate out of Los Angeles, with Yoav Kutner and me as its leaders.&quot;.</p>
+    <p>Yoav Kutner left Magento in April 2012 citing the vision for Magento having changed since the time of acquisition due to high level staff changes. Magento has since been moved to eBay Enterprise.</p>
+    <h3><a id="contact_page_top"></a></h3>
+    <p>&nbsp;</p>
+  </div>
+  <div id="contact_page">
+    <h1>Contact us    </h1>
+    <h2>&nbsp;</h2>
+    <form name="form1" method="post" action="php/sentmail.php">
+      <table width="500" border="0" align="center">
+        <tr align="left">
+          <th colspan="2" scope="col">Please send email to me:</th>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td><strong>
+            <input type="text" name="uname" id="uname">
+          </strong></td>
+        </tr>
+        <tr>
+          <td>Subject</td>
+          <td><span id="sprytextfield2">
+            <input type="text" name="ur_sub" id="ur_sub">
+            <span class="textfieldRequiredMsg">Please enter your subject.</span></span></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><span id="sprytextfield1">
+            <input type="text" name="uemail" id="uemail">
+          <span class="textfieldRequiredMsg">Please enter your email.</span></span></td>
+        </tr>
+        <tr>
+          <td>Content</td>
+          <td><span id="sprytextarea1">
+            <textarea name="umailcontent" cols="50" rows="5" id="umailcontent"></textarea>
+          <br><span class="textareaRequiredMsg">Please enter the content.</span></span></td>
+        </tr>
+        <tr align="center">
+          <td colspan="2"><input name="submit" type="submit" class="buttons" id="submit" value="Submit">
+            <input name="reset" type="reset" class="buttons" id="reset" value="Reset"></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p>OR <a href="mailto:freejavaster@gmail.com">send email to me</a></p>
+    </form>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  <div class="footer">
+    <p>Copyright © 2003 - 2015 OPEN SOURCE NEW ZEALAND</p>
+    <p><a href="http://www.facebook.com"><img src="img/Find-us-on-facebook_logo.png" width="200" alt="facebook button"></a></p>
+  <!-- end .footer --></div>
+<!-- end .container --></div>
+<div class="tooltipContent" id="sprytooltip2"><img src="img/Mysql-screenshot.png" width="537" height="119" alt="mysql cmd"></div>
+<div class="tooltipContent" id="sprytooltip1"><img src="img/The_MySQL_Workbench_startup_screen.png" width="500" alt="mysql screen"></div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+var sprytooltip1 = new Spry.Widget.Tooltip("sprytooltip1", "#sprytrigger1", {followMouse:true, showDelay:300, hideDelay:500, useEffect:"fade"});
+var sprytooltip2 = new Spry.Widget.Tooltip("sprytooltip2", "#sprytrigger2", {followMouse:true, showDelay:300, hideDelay:500, useEffect:"fade"});
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+</script>
+<!--********************************-->
+<script type="text/javascript">
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2");
+</script>
+</body>
+</html>
